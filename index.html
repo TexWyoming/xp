@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset='utf-8' />
+        <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+        <meta name="description" content="Xp : xp chart for pathfinder game" />
+        <meta name="viewport" content="initial-scale=1" />
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="script.js"></script>
+        <title>Pathfinder XP Chart</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <header>
+                <h1>Pathfinder XP Chart</h1>
+            </header>
+            
+            <h2 id="total-xp">Total: </h2>
+            
+            <div class="progress">
+                <div id="past-bar" class="progress-bar progress-bar-success">
+                </div>
+                <div id="current-bar" class="progress-bar progress-bar-warning">
+                </div>
+            </div>
+            
+            <h2 id="level">Level </h2>
+            
+            <div class="progress">
+                <div id="just-current-bar" class="progress-bar progress-bar-warning">
+                </div>
+            </div>
+
+            <table id='xp-table' class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Name</th>
+                        <th>XP</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id='table-body'>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
